@@ -1,0 +1,20 @@
+<?php
+/** @var $block \Magento\Framework\View\Element\Template */
+/** @var $escaper \Magento\Framework\Escaper */
+?>
+<div class="promo-bar" data-bind="scope: 'promo_bar'">
+    <div data-bind="html: promo().content"></div>
+</div>
+<script type="text/x-magento-init">
+{
+    "*": {
+        "Magento_Ui/js/core/app": {
+            "components": {
+                "promo_bar": {
+                    "component": "LeSite_CustomBar/js/view/promo-bar"
+                }
+            }
+        }
+    }
+}
+</script>
